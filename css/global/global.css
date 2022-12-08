@@ -1,0 +1,85 @@
+body {
+  margin: 0 auto;
+  background-color: #ffe6d0;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul,
+dd {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-banner {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.botao {
+  background-color: #d93814;
+  padding: 16px 32px;
+  color: #ffe6d0;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  transition: 0.4s;
+}
+
+.botao:hover {
+  background: #f29f05;
+  color: black;
+}
+
+.titulo {
+  font-family: "Rubik Dirt", cursive;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+/* Color Theme Swatches in Hex */
+.cor1 {
+  color: #f29f05;
+}
+.cor2 {
+  color: #f28705;
+}
+.cor3 {
+  color: #d9bca3;
+}
+.cor4 {
+  color: #732f17;
+}
+.cor5 {
+  color: #d93814;
+}
+
+.fullscrean {
+  background-color: black;
+}
+
+.texto-enorme {
+  font-size: 150%;
+}

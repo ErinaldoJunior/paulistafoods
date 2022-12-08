@@ -1,0 +1,33 @@
+.footer-bg {
+  background-color: #f29f05;
+}
+
+.footer {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 30px;
+}
+
+.redes-sociais img {
+  width: 30px;
+  transition: 0.4s;
+}
+
+.redes-sociais img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .footer h3 {
+    font-size: 0.5rem;
+  }
+  .redes-sociais {
+    gap: 10px;
+  }
+}

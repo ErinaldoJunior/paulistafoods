@@ -1,0 +1,24 @@
+.petiscos-bg {
+  background-color: #732f17;
+}
+
+.petiscos {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+}
+
+.petiscos-titulo {
+  text-align: start;
+  font-size: 6rem;
+  text-transform: uppercase;
+  align-self: center;
+  color: #ffe6d0;
+}
+
+.petiscos-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

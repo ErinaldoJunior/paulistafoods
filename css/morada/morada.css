@@ -1,0 +1,41 @@
+.morada {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px;
+  margin-bottom: 40px;
+}
+
+.morada-titulo {
+  font-size: 4rem;
+  text-align: center;
+  grid-column: 1 / -1;
+  color: #732f17;
+  margin-bottom: 60px;
+}
+
+.morada-conteudo {
+  display: grid;
+  justify-content: center;
+}
+
+@media (max-width: 860px) {
+  .morada {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px;
+  }
+  .morada-titulo {
+    margin-bottom: 0px;
+  }
+  .morada-conteudo {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 490px) {
+  .morada-titulo {
+    font-size: 3rem;
+  }
+}
