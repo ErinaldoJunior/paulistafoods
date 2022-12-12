@@ -1,125 +1,69 @@
-.esfiha {
+.burguer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: end;
+  align-items: center;
   padding: 60px;
 }
 
-.content-slide {
-  grid-column: 2;
-  justify-self: end;
-  width: 400px;
-  height: 600px;
-  border-radius: 20px;
-  overflow: hidden;
-  position: relative;
-}
-
-.navigation {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translate(-50%);
+.burguers {
   display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding-bottom: 80px;
 }
 
-.bar {
-  width: 35px;
-  height: 15px;
-  background-color: #222;
-  margin: 6px;
-  cursor: pointer;
-  transition: 0.6s;
+.paulista-burguers-logo {
+  transition: 0.4s;
 }
 
-.bar:hover {
-  background-color: #d93814;
-}
-
-input {
-  display: none;
-}
-
-.slides {
-  display: flex;
-  width: 800%;
-  height: 100%;
-}
-
-.slide {
-  width: 12.5%;
-  transition: 0.6s;
-}
-
-#slide1:checked ~ .s1 {
-  margin-left: 0;
-}
-
-#slide2:checked ~ .s1 {
-  margin-left: -12.5%;
-}
-
-#slide3:checked ~ .s1 {
-  margin-left: -25%;
-}
-
-#slide4:checked ~ .s1 {
-  margin-left: -37.5%;
-}
-
-#slide5:checked ~ .s1 {
-  margin-left: -50%;
-}
-
-#slide6:checked ~ .s1 {
-  margin-left: -62.5%;
-}
-
-#slide7:checked ~ .s1 {
-  margin-left: -75%;
-}
-
-#slide8:checked ~ .s1 {
-  margin-left: -87.5%;
+.paulista-burguers-logo:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1100px) {
-  .esfiha {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 80px;
-  }
-  .esfiha .titulo {
-    text-align: center;
+  .petiscos-titulo {
+    font-size: 4rem;
   }
 }
-@media (max-width: 600px) {
-  .esfiha .titulo {
+@media (max-width: 800px) {
+  .petiscos-titulo {
     font-size: 3rem;
   }
 }
 
-@media (max-width: 490px) {
-  .navigation {
-    bottom: 120px;
+@media (max-width: 600px) {
+  .petiscos-titulo {
+    font-size: 2rem;
   }
-  .bar {
-    width: 20px;
-  }
-  .esfiha {
-    gap: 30px;
-    height: 750px;
+  .burguers {
+    gap: 10px;
   }
 }
 
-@media (max-width: 380px) {
-  .navigation {
-    bottom: 140px;
+@media (max-width: 480px) {
+  .petiscos-titulo {
+    font-size: 1.5rem;
+    text-align: start;
   }
-  .esfiha {
-    padding: 20px;
+  .burguers img {
+    height: 30%;
+    width: 30%;
   }
-  .slides {
-    height: 50%;
+}
+
+@media (max-width: 400px) {
+  .petiscos-titulo {
+    font-size: 1.125rem;
+    text-align: start;
+  }
+
+  .burguer {
+    padding-bottom: 40px;
+  }
+  .burguers {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

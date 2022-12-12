@@ -19,7 +19,7 @@
 
 .sobre-conteudo {
   display: grid;
-  gap: 30px;
+  gap: 60px;
   justify-self: center;
 }
 
@@ -52,22 +52,22 @@
 }
 
 @media (max-width: 700px) {
-  .sobre-titulo {
-    font-size: 4rem;
-  }
-  .sobre-descricao {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 700px) {
   .sobre {
     grid-template-columns: 1fr;
   }
   .sobre-titulo {
+    font-size: 4rem;
     text-align: center;
   }
   .sobre-descricao {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .sobre-titulo {
+    font-size: 3rem;
     text-align: center;
   }
 }

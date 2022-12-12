@@ -38,4 +38,14 @@
   .morada-titulo {
     font-size: 3rem;
   }
+  .morada-conteudo {
+    gap: 20px;
+    text-align: center;
+  }
+  .morada-conteudo h2 {
+    font-size: 1.25rem;
+  }
+  .morada-conteudo p {
+    font-size: 1rem;
+  }
 }

@@ -19,7 +19,6 @@
 .menu-secundario {
   text-align: end;
   display: none;
-  margin-top: 10px;
   position: absolute;
   left: 78%;
   background-color: #732f17;
@@ -54,8 +53,9 @@
     display: none;
   }
   .menu-secundario {
+    left: 50%;
     text-align: center;
-    background-color: #733017ae;
+    background-color: #d93814e1;
   }
   .menu-secundario-grid a {
     color: #f2f2f2;
