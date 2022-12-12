@@ -55,7 +55,7 @@
 
 @media (max-width: 400px) {
   .petiscos-titulo {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     text-align: start;
   }
 
@@ -65,5 +65,8 @@
   .burguers {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .paulista-burguers-logo {
+    justify-self: end;
   }
 }
