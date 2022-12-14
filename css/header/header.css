@@ -1,8 +1,12 @@
+header {
+  border-bottom: 1px solid #d93814e1;
+}
 .header {
   display: flex;
   margin-top: 20px;
   align-items: center;
   justify-content: space-between;
+  padding: 20px 0;
 }
 
 .logo {
@@ -21,8 +25,12 @@
   display: none;
   position: absolute;
   left: 78%;
-  background-color: #732f17;
+  background-color: #d93814e1;
   border-radius: 4px;
+}
+
+#cardapio {
+  display: none;
 }
 
 .menu-secundario-grid {
@@ -32,12 +40,17 @@
 }
 
 .menu-secundario-grid a {
-  color: #d9bca3;
+  color: #f2f2f2;
+  border-bottom: 1px solid white;
   display: block;
-  padding: 10px;
-  font-size: 1.125rem;
+  padding: 5px;
+  font-size: 1rem;
   font-weight: bold;
   transition: 0.4s;
+}
+
+#ultimo-link {
+  border-bottom: none;
 }
 
 .menu-secundario-grid a:hover {
@@ -52,6 +65,9 @@
   .menu-none {
     display: none;
   }
+  #cardapio {
+    display: block;
+  }
   .menu-secundario {
     left: 50%;
     text-align: center;
@@ -59,7 +75,6 @@
   }
   .menu-secundario-grid a {
     color: #f2f2f2;
-
     border-bottom: 1px solid white;
   }
 }

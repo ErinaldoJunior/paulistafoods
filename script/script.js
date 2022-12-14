@@ -1,16 +1,60 @@
-const icone = document.querySelector(".icone-pizza");
-const menu = document.querySelector(".menu-secundario");
+function menuPizza() {
+  const icone = document.querySelector(".icone-pizza");
+  const menu = document.querySelector(".menu-secundario");
 
-console.log(icone);
+  console.log(icone);
 
-icone.addEventListener("click", function () {
-  if (menu.style.display == "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
+  icone.addEventListener("click", function () {
+    if (menu.style.display == "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  });
+}
+
+menuPizza();
+
+function scrollSuave() {
+  const linksInternos = document.querySelectorAll(".js-menu a[href^='#']");
+
+  function scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(href);
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
   }
-});
 
+  linksInternos.forEach((link) => {
+    link.addEventListener("click", scrollToSection);
+  });
+}
+
+scrollSuave();
+
+function animacaoScroll() {
+  const sections = document.querySelectorAll(".js-scroll");
+
+  if (sections.length) {
+    const windowMetade = window.innerHeight * 0.8;
+
+    function animaScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top - windowMetade;
+        if (sectionTop < 0) {
+          section.classList.add("ativo-animar");
+        }
+      });
+    }
+    animaScroll();
+    window.addEventListener("scroll", animaScroll);
+  }
+}
+
+animacaoScroll();
 /* const imgs = document.querySelectorAll("img");
 
 imgs.forEach((item) => {
