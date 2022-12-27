@@ -23,11 +23,13 @@
 }
 
 .lista-produtos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 60px 40px;
   align-items: center;
   position: relative;
+  padding: 20px;
 }
 
 .produto {
@@ -35,7 +37,7 @@
   font-size: 1rem;
   font-weight: bold;
   text-align: center;
-  border-right: 1px solid black;
+  padding-bottom: 20px;
 }
 
 .preco {
@@ -61,4 +63,15 @@
 .morada-titulo-menu {
   border-top: 1px solid #732f17;
   padding-top: 20px;
+}
+
+.descricao-produto {
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .menu-titulo {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
