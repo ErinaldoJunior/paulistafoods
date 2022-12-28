@@ -24,6 +24,17 @@
   left: 78%;
   background-color: #d93814e1;
   border-radius: 4px;
+  z-index: 1;
+  -webkit-animation: animate-gif 1s;
+}
+
+@-webkit-keyframes animate-gif {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #cardapio {
@@ -69,9 +80,13 @@
     left: 50%;
     text-align: center;
     background-color: #d93814e1;
+    margin-top: -20px;
   }
   .menu-secundario-grid a {
     color: #f2f2f2;
     border-bottom: 1px solid white;
+  }
+  .logo {
+    width: 100px;
   }
 }
