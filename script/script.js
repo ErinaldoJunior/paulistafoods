@@ -1,42 +1,37 @@
-function menuPizza() {
-  const icone = document.querySelector(".icone-pizza");
-  const menu = document.querySelector(".menu-secundario");
+const botaoDropdown = document.querySelector('.botao-dropdown');
+const dropdown = document.querySelector('.dropdown');
+const logoDropdown = document.querySelector('.logo-dropdown');
 
-  console.log(icone);
-
-  icone.addEventListener("click", function () {
-    if (menu.style.display == "block") {
-      menu.style.display = "none";
-    } else {
-      menu.style.display = "block";
-    }
-  });
+function ativarDropdown(event) {
+  event.preventDefault();
+  dropdown.classList.toggle('dropdown-ativo');
+  logoDropdown.classList.toggle('ativar-logo');
 }
 
-menuPizza();
+botaoDropdown.addEventListener('click', ativarDropdown);
 
 function scrollSuave() {
   const linksInternos = document.querySelectorAll(".js-menu a[href^='#']");
 
   function scrollToSection(event) {
     event.preventDefault();
-    const href = event.currentTarget.getAttribute("href");
+    const href = event.currentTarget.getAttribute('href');
     const section = document.querySelector(href);
     section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+      behavior: 'smooth',
+      block: 'start',
     });
   }
 
   linksInternos.forEach((link) => {
-    link.addEventListener("click", scrollToSection);
+    link.addEventListener('click', scrollToSection);
   });
 }
 
 scrollSuave();
 
 function animacaoScroll() {
-  const sections = document.querySelectorAll(".js-scroll");
+  const sections = document.querySelectorAll('.js-scroll');
 
   if (sections.length) {
     const windowMetade = window.innerHeight * 0.9;
@@ -45,12 +40,12 @@ function animacaoScroll() {
       sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top - windowMetade;
         if (sectionTop < 0) {
-          section.classList.add("ativo-animar");
+          section.classList.add('ativo-animar');
         }
       });
     }
     animaScroll();
-    window.addEventListener("scroll", animaScroll);
+    window.addEventListener('scroll', animaScroll);
   }
 }
 

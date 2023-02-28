@@ -15,17 +15,22 @@
 
 <body>
   <main>
-    <header class="container header">
-      <a href="./"><img class="logo" src="./img/header/logo.png" alt="Logo"></a>
-      <div>
-        <nav class="menu-principal">
-          <ul>
-            <li><a href="./index.html">
-                <lord-icon src="https://cdn.lordicon.com/prxpxnbf.json" trigger="hover" colors="outline:#121331,primary:#d93814,secondary:#f29f05" style="width:70px;height:70px">
-                </lord-icon>
-              </a></li>
-          </ul>
-        </nav>
+    <header>
+      <div class="container header">
+        <a href="./"><img class="logo" src="./img/header/logo.png" alt="Logo"></a>
+        <div>
+          <nav>
+            <ul class="menu-principal">
+              <li>
+                <a href="" class="botao-dropdown"><img class="logo-dropdown" src="./img/header/pizza.png" alt=""></a>
+                <ul class="dropdown">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a id="ultimo-link" href="#como-chegar">Como Chegar</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <section>
@@ -147,7 +152,7 @@
         </dl>
       </div>
     </section>
-    <section class="container morada">
+    <section class="container morada" id="como-chegar">
       <h1 class="morada-titulo titulo morada-titulo-menu">Como chegar</h1>
       <img src="./img/morada/mapa.jpg" alt="morada">
       <div class="morada-conteudo">
